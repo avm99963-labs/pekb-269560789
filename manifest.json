@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Reproduce pekb/269560789",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://support.google.com/s/community*"],
+      "js": ["console_inject_start.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "https://support.google.com/s/community*"
+  ]
+}
